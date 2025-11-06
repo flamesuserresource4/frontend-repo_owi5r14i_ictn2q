@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-import Spline from '@splinetool/react-spline';
+import SafeSpline from './SafeSpline';
 
 const brass = '#E4B953';
-const moss = '#505E4B';
 
 export default function Hero({ lang }) {
   return (
@@ -16,7 +15,7 @@ export default function Hero({ lang }) {
       />
 
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/xn01YV5mI9-hero-placeholder/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <SafeSpline scene="https://prod.spline.design/xn01YV5mI9-hero-placeholder/scene.splinecode" />
       </div>
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0e120e] via-transparent to-transparent opacity-70" />
